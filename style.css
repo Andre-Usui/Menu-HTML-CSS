@@ -160,7 +160,7 @@ body{
     align-items: center;
     justify-content: center; 
     background: rgba(13, 33, 37);
-    background: -webkit-linear-gradient(-45deg, rgba(13, 33, 37), rgba(51, 13, 43) rgba(7, 1, 53));    /*não funciona no Ie11*/
+    background: -webkit-linear-gradient(-45deg, rgba(13, 33, 37), rgba(51, 13, 43), rgba(7, 1, 53));    /*não funciona no Ie11*/
     animation: bgTransition 8s ease-in-out infinite; 
 
 
