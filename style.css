@@ -89,12 +89,12 @@ a, a:visited, a:active {
     top: 15vh;
     left: 0;
     max-width: 14.1vw;
-    background: transparent;
+    background: cover;
     height: 10vh;
     width: 10vh;
     z-index: -1;
     visibility: hidden;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 5s;
 }
 
 .menu-itens{
@@ -104,8 +104,7 @@ a, a:visited, a:active {
     display: flex;
     justify-content: center;
     z-index: 2;
-    visibility: hidden;
-    transition: ease-in-out 1s;
+    opacity: 0;
 }
 
 .menu-itens ul{
@@ -119,7 +118,6 @@ a, a:visited, a:active {
     padding: 1.7vh;
     margin: 3vh 0;
     text-align: center;
-    transition: ease-in-out 1s;
 }
 
 .menu-itens ul li a{
@@ -156,17 +154,13 @@ a, a:visited, a:active {
 #toggle:checked ~ .menu .menu-itens{
     height: 45vh;
     width: 14.1vw;
-    box-sizing: border-box;
-    z-index: 1;
-}
-
-#toggle:checked ~ .menu .menu-itens{
+    z-index: 2;
+    opacity: 1;
     visibility: visible;
-    opacity: 1;  
 }
 
 
-/*Meu nome */
+/*Meu nome*/
 
 
 .meuNome {
@@ -184,7 +178,7 @@ a, a:visited, a:active {
     background-size: cover;
     align-items: center;
     filter: grayscale(0.9);
-    transition: 0.5s;
+    transition: 1s;
 }
 .meuNome h1 {
     background-color: rgba(21, 31, 55, 0.2);    
@@ -229,23 +223,16 @@ a, a:visited, a:active {
     text-align: center;
     align-items: center;
     justify-content: center; 
-    background: -webkit-linear-gradient(45deg, rgb(80, 14, 82), rgb(43, 3, 34), rgba(7, 1, 53), rgb(10, 7, 16)); 
-    animation: bgTransition 2s ease-in-out infinite; 
+    background: linear-gradient(45deg, rgb(80, 14, 82), rgb(43, 3, 34), rgba(7, 1, 53), rgb(10, 7, 16));  
     color:rgb(231, 231, 231);
     letter-spacing: 0.1vw;
     font-size: 1vw;
--webkit-animation: normal;
 
 
 }
-@keyframes bgTransition{
-    0% {background-position: 0% 70%;}
-    50% {background-position: 60% 100%;}
-    100% {background-position: 30% 100%;}
-}
 
 
-/* Textos*/
+/* Textos */
 
 
 .container{
@@ -320,7 +307,7 @@ footer {
     text-align: center;
 }
 
-/*RESPONSIVIDADE*/
+/* RESPONSIVIDADE */
 
 @media (max-width: 800px){
 
